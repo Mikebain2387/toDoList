@@ -8,3 +8,23 @@ padding-left: 10px;
  display: none;
 }
 
+#theList{
+ width: 50%;
+}
+
+.crossed-out {
+ text-decoration: line-through;
+}
+
+
+ .list{
+  cursor: pointer;
+ }
+
+ 
+
+@media (max-width: 900px){
+ #theList{
+  width: 83%;
+ }
+}

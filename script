@@ -1,0 +1,86 @@
+/*
+checkbox needs work
+  let checkbox = document.createElement('input'); // creates  new checkbox element
+  checkbox.type = 'checkbox'; //sets input to checkbox
+
+  listItem.appendChild(checkbox); //sends new checkbox item to parent element li
+*/
+
+
+
+/*
+function finished(){
+
+ let selectedItem = document.querySelectorAll(".list .newLi");
+ console.log(selectedItem)
+ 
+ for(i=0; i<selectedItem.length; i++){
+  currentTask = selectedItem[i];
+  currentTask.addEventListener('click', completedItem)
+ }
+ 
+ function completedItem(){
+  currentTask.style.textDecoration = 'line-through';
+  
+ }
+ 
+}
+ */
+
+
+
+// Get all the li elements
+const listItems = document.querySelectorAll('#theList .newLi');
+
+// Loop through each li element
+for (let i = 0; i < listItems.length; i++) {
+    // Add a click event listener to each li element
+    listItems[i].addEventListener('click', function() {
+        // Toggle the 'crossed-out' class on click
+        this.classList.toggle('crossed-out');
+    });
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+how to delete checked item???
+
+deleteItem.addEventListener("click", removeItem)
+function removeItem(){
+ if(checkbox.checked){
+  listItem.value = "";
+ }
+}
+
+*/
+
+/*
+trying to add checkbox may not be bext choice
+
+function addCheckBox(){
+ if( != ""){
+  let checkItem = document.createElement("input");
+  checkItem.type = 'checkbox';
+  document.getElementsByTagName("li").appendChild(checkItem);
+ }
+}
+
+*/
+
+
