@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./bootstrap.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="toDoList">
+          <h1 class="col-6">Mike's to do list:</h1>
+          <input
+            id="addTask"
+            type="text"
+            placeholder="New Task"
+            class="myList col-6"
+          />
+          <button id="addBtn" class="add">Add</button>
+          <ul class="mt-2 mx-auto mb-2" id="theList">
+            <li></li>
+          </ul>
+
+          <button id="remove" class="remove">Delete</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./app.js"></script>
+</html>

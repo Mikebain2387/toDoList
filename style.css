@@ -1,0 +1,10 @@
+#theList li{
+padding-left: 10px;
+ list-style: none;
+}
+
+#theList li:first-child{
+ visibility: hidden;
+ display: none;
+}
+
