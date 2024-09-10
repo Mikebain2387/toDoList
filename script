@@ -1,8 +1,8 @@
+// selectors
 
-let newTask = document.getElementById('addTask');
-let submit = document.getElementById('addBtn');
-let deleteItem = document.getElementById('remove');
-let taskItem = document.getElementById('list');
+const todoInput = document.querySelector('.todo-input');
+const todoButton = document.querySelector('.todo-button');
+const todoList = document.querySelector('.todo-list');
 
 // take value from input and send it to the list when the add button is clicked
 
