@@ -17,7 +17,7 @@ function addTodo(event){
   if(todoInput.value !== ""){ 
   
   
-  // to div
+  // add new element to hold list items and classes for them
   const todoDiv = document.createElement("div");
   todoDiv.classList.add("todo");
   // create li
@@ -37,7 +37,7 @@ function addTodo(event){
   trashButton.classList.add("trash-btn");
   todoDiv.appendChild(trashButton);
   
-  // add to list
+  // add  to list
   todoList.appendChild(todoDiv);
   // clear input
   clear()
