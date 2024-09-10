@@ -1,11 +1,38 @@
+.carter-one-regular {
+ font-family: "Carter One", system-ui;
+ font-weight: 400;
+ font-style: normal;
+}
+
+
+
+
+
+
+
+.toDoList h1{
+ font-family: "Carter One";
+}
+
+
 #theList li{
 padding-left: 10px;
- list-style: none;
+ 
 }
 
 #theList li:first-child{
  visibility: hidden;
  display: none;
+ list-style: none;
+}
+#theList li:nth-child(odd){
+ background: dodgerblue;
+ color: whitesmoke;
+}
+
+#theList li:nth-child(even){
+ background: rgb(37, 100, 100);
+ color: antiquewhite;
 }
 
 #theList{
