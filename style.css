@@ -1,13 +1,17 @@
-
 body{
- background: rgb(27, 72, 57);
+ background: linear-gradient(180deg, rgba(0, 73, 83, 0) , rgba(18, 177, 198, 0)), url("./images/pexels-therato-15463942.jpg");
+ background-size: cover;
+ background-position: center;
  color: whitesmoke;
  min-height: 100vh;
 }
 
 header h1{
- font-size: 75px;
+ font-size: 100px;
  text-decoration: underline;
+ text-underline-offset: 10px;
+ color: rgba(0, 255, 234, 0.678);
+ text-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
 
 header, form{
@@ -47,6 +51,9 @@ header, form{
 
 @media (min-width: 481px) and (max-width: 768px) { 
  /* STYLES HERE */
+ header h1{
+  font-size: 100px;
+ }
  .addStuff{
   margin-top: -100px;
   
@@ -76,38 +83,61 @@ header, form{
 
 @media (max-width: 480px) {
  /* STYLES HERE */
+header h1{
+ font-size: 55px;
+}
+
 .addStuff{
  margin-top: -100px;
  
- width: 250px;
- height: 65px;
- font-size: 30px;
+ width: 270px;
+ height: 45px;
+ font-size: 20px;
 }
 form button{
+ 
  margin-top: -100px;
- height: 65px;
+ height: 45px;
  
 }
 
+
 .btn-text{
- font-size: 30px;
+ position: relative;
+ top:-24px;
+ 
+ font-size: 20px;
+ 
 }
  .theList{
   margin-top: -90px;
+  
  }
  div.todo{
   
  width: 300px;
  
+ 
   }
+  .todo, .trash-btn, .complete-btn{
+   height: 45px;
+   
+  }
+  .trash-btn, .complete-btn{
+   font-size: 12px !important;
+  }
+  
 }
+
+/*end media query*/
 
 form input, form button{
  padding: 0.5rem;
- font-size: 2rem;
+ font-size: 40px;
  border: none;
- background: white;
- 
+ background: rgba(251, 251, 251, 0.678);
+ font-weight: bold;
+ color: rgb(36, 37, 37);
   
 }
 
@@ -124,15 +154,15 @@ form button{
 
 .todo-button{
  font-weight: bolder;
- color: rgb(27, 72, 57);
- background: white;
+ color: rgb(84, 87, 86);
+ background: rgba(255, 255, 255, 0.849);
  cursor: pointer;
  transition: all 0.3s ease;
 }
 
 .todo-button:hover{
-background: rgb(31, 113, 86);
-color: white;
+background: rgba(0, 255, 234, 0.678);
+color: whitesmoke;
 
 }
 
@@ -149,10 +179,11 @@ color: white;
 }
 
 .todo{
- width: 400px;
+ width: 500px;
 margin: 12px;
-background-color: whitesmoke;
-color: black;
+background-color: rgb(211, 210, 210);
+color: rgb(63, 62, 62);
+font-weight: bold;
 font-size: 20px;
 display: flex;
 justify-content: space-between;
@@ -165,16 +196,16 @@ border-radius: 25px;
 }
 
 .todo-item{
- padding: 0rem 0.5rem;
+ padding: 0px 25px;
 }
 
 .trash-btn, .complete-btn{
- background: rgb(158, 14, 14);
+ background: rgb(214, 40, 40);
  color: whitesmoke;
  border: none;
  padding: 1rem;
  cursor: pointer;
- font-size: 1rem;
+ font-size: 20px;
 }
 .trash-btn{
  border-top-right-radius: 25px;
@@ -182,7 +213,7 @@ border-radius: 25px;
 }
 
 .complete-btn{
- background: rgb(15, 208, 144);
+ background: rgba(53, 158, 149, 0.662);
 }
 
 .completed{
