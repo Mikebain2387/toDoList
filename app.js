@@ -13,23 +13,33 @@ todoList.addEventListener("click", completeTask);
 // function to add new task
 function addTodo(event){
   event.preventDefault();
-  if(todoInput.value !==""){
-
-    const todoDiv = document.createElement("div");
-    todoDiv.classList.add("todo");
-    
-    //create new li
-    const newTodo = document.createElement('li');
-    newTodo.innerText = todoInput.value;
-    newTodo.classList.add('todo-item');
-    todoDiv.appendChild(newTodo);
-    
-    //checkmark
-    const completedButton = document.createElement('button')
-    completedButton.classList.add('complete-btn');
-    todoDiv.appendChild(completedButton);
-    
-    //delete button
-    
+  
+  if(todoInput.value !== ""){ 
+  
+  
+  // to div
+  const todoDiv = document.createElement("div");
+  todoDiv.classList.add("todo");
+  // create li
+  const newTodo = document.createElement("li");
+  newTodo.innerText = todoInput.value;
+  newTodo.classList.add("todo-item");
+  todoDiv.appendChild(newTodo);
+  // completed check button
+  const completedButton = document.createElement('button');
+  completedButton.innerText = "✓";  
+  completedButton.classList.add("complete-btn");
+  todoDiv.appendChild(completedButton);
+  
+  // delete button
+  const trashButton = document.createElement('button');
+  trashButton.innerText = "X";  
+  trashButton.classList.add("trash-btn");
+  todoDiv.appendChild(trashButton);
+  
+  // add to list
+  todoList.appendChild(todoDiv);
+  // clear input
+  clear()
   }
-}
+  }
