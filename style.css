@@ -17,16 +17,40 @@ header, form{
  align-items: center;
 }
 
-@media screen and (min-width: 769px) {
+@media (min-width: 769px) and (max-width:1024px) {
  /* STYLES HERE */
-}
+ .addStuff{
+  margin-top: -100px;
+  
+  width: 550px;
+  height: 75px;
+  font-size: 30px;
+ }
+ form button{
+  margin-top: -100px;
+  height: 75px;
+  
+ }
+ 
+ .btn-text{
+  font-size: 30px;
+ }
+  .theList{
+   margin-top: -90px;
+  }
+  div.todo{
+   
+  width: 550px;
+  
+   }
+ }
 
 @media (min-width: 481px) and (max-width: 768px) { 
  /* STYLES HERE */
  .addStuff{
   margin-top: -100px;
   
-  width: 250px;
+  width: 550px;
   height: 65px;
   font-size: 30px;
  }
@@ -44,11 +68,11 @@ header, form{
   }
   div.todo{
    
-  width: 300px;
+  width: 500px;
   
    }
  }
-}
+
 
 @media (max-width: 480px) {
  /* STYLES HERE */
