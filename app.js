@@ -43,3 +43,26 @@ function addTodo(event){
   clear()
   }
   }
+
+  //clear input
+function clear(){
+  todoInput.value="";
+ }
+ 
+ // delete items
+ 
+ function deleteTask(e){
+ const item = e.target;
+ if(item.classList[0]=== "trash-btn"){
+  const todo= item.parentElement;
+  todo.remove();
+ }
+ }
+ 
+ function completeTask(e){
+  const item = e.target;
+  if(item.classList[0]==="complete-btn"){
+   const todo= item.parentElement;
+   todo.classList.toggle("completed");
+  }
+ }

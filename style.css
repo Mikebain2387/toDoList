@@ -1,57 +1,167 @@
-.carter-one-regular {
- font-family: "Carter One", system-ui;
- font-weight: 400;
- font-style: normal;
+
+body{
+ background: rgb(27, 72, 57);
+ color: whitesmoke;
+ min-height: 100vh;
 }
 
-
-
-
-
-
-
-.toDoList h1{
- font-family: "Carter One";
+header h1{
+ font-size: 75px;
+ text-decoration: underline;
 }
 
+header, form{
+ min-height: 20vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
 
-#theList li{
-padding-left: 10px;
+@media screen and (min-width: 769px) {
+ /* STYLES HERE */
+}
+
+@media (min-width: 481px) and (max-width: 768px) { 
+ /* STYLES HERE */
+ .addStuff{
+  margin-top: -100px;
+  
+  width: 250px;
+  height: 65px;
+  font-size: 30px;
+ }
+ form button{
+  margin-top: -100px;
+  height: 65px;
+  
+ }
+ 
+ .btn-text{
+  font-size: 30px;
+ }
+  .theList{
+   margin-top: -90px;
+  }
+  div.todo{
+   
+  width: 300px;
+  
+   }
+ }
+}
+
+@media (max-width: 480px) {
+ /* STYLES HERE */
+.addStuff{
+ margin-top: -100px;
+ 
+ width: 250px;
+ height: 65px;
+ font-size: 30px;
+}
+form button{
+ margin-top: -100px;
+ height: 65px;
  
 }
 
-#theList li:first-child{
- visibility: hidden;
- display: none;
+.btn-text{
+ font-size: 30px;
+}
+ .theList{
+  margin-top: -90px;
+ }
+ div.todo{
+  
+ width: 300px;
+ 
+  }
+}
+
+form input, form button{
+ padding: 0.5rem;
+ font-size: 2rem;
+ border: none;
+ background: white;
+ 
+  
+}
+
+form input{
+ border-top-left-radius: 35px;
+ border-bottom-left-radius: 35px;
+ 
+}
+
+form button{
+ border-top-right-radius: 35px;
+ border-bottom-right-radius: 35px;
+}
+
+.todo-button{
+ font-weight: bolder;
+ color: rgb(27, 72, 57);
+ background: white;
+ cursor: pointer;
+ transition: all 0.3s ease;
+}
+
+.todo-button:hover{
+background: rgb(31, 113, 86);
+color: white;
+
+}
+
+.todo-container{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.todo-list{
+ min-width: 30%;
+ 
  list-style: none;
 }
-#theList li:nth-child(odd){
- background: dodgerblue;
+
+.todo{
+ width: 400px;
+margin: 12px;
+background-color: whitesmoke;
+color: black;
+font-size: 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+border-radius: 25px;
+}
+
+.todo li{
+ flex: 1;
+}
+
+.todo-item{
+ padding: 0rem 0.5rem;
+}
+
+.trash-btn, .complete-btn{
+ background: rgb(158, 14, 14);
  color: whitesmoke;
+ border: none;
+ padding: 1rem;
+ cursor: pointer;
+ font-size: 1rem;
+}
+.trash-btn{
+ border-top-right-radius: 25px;
+ border-bottom-right-radius: 25px ;
 }
 
-#theList li:nth-child(even){
- background: rgb(37, 100, 100);
- color: antiquewhite;
+.complete-btn{
+ background: rgb(15, 208, 144);
 }
 
-#theList{
- width: 50%;
-}
-
-.crossed-out {
+.completed{
  text-decoration: line-through;
-}
-
-
- .list{
-  cursor: pointer;
- }
-
- 
-
-@media (max-width: 900px){
- #theList{
-  width: 83%;
- }
+ opacity: 0.6;
 }
