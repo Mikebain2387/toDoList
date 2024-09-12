@@ -1,3 +1,14 @@
+
+
+.caveat-<uniquifier> {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+
+
 body{
  background: linear-gradient(180deg, rgba(0, 73, 83, 0) , rgba(18, 177, 198, 0)), url("./images/pexels-therato-15463942.jpg");
  background-size: cover;
@@ -8,9 +19,10 @@ body{
 
 header h1{
  font-size: 100px;
+ font-family: 'caveat';
  text-decoration: underline;
  text-underline-offset: 10px;
- color: rgba(0, 255, 234, 0.678);
+ color: rgba(178, 130, 25, 0.758);
  text-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
 
@@ -33,6 +45,7 @@ header, form{
  form button{
   margin-top: -100px;
   height: 75px;
+  
   
  }
  
@@ -138,7 +151,8 @@ form input, form button{
  background: rgba(251, 251, 251, 0.678);
  font-weight: bold;
  color: rgb(36, 37, 37);
-  
+  font-family: 'caveat';
+  text-align: center;
 }
 
 form input{
@@ -150,6 +164,7 @@ form input{
 form button{
  border-top-right-radius: 35px;
  border-bottom-right-radius: 35px;
+ 
 }
 
 .todo-button{
@@ -161,7 +176,7 @@ form button{
 }
 
 .todo-button:hover{
-background: rgba(0, 255, 234, 0.678);
+background: rgba(178, 130, 25, 0.758);
 color: whitesmoke;
 
 }
@@ -220,3 +235,11 @@ border-radius: 25px;
  text-decoration: line-through;
  opacity: 0.6;
 }
+
+.btn-text{
+  padding-right: 10px;
+ }
+
+ .addStuff{
+  width: 600px;
+ }
