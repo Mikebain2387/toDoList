@@ -40,7 +40,8 @@ header, form{
 
 form input, form button{
  padding: 0.5rem;
- font-size: 40px;
+height: 80px;
+font-size: 40px;
  border: none;
  background: rgba(251, 251, 251, 0.678);
  font-weight: bold;
@@ -58,13 +59,13 @@ form input{
 form button{
  border-top-right-radius: 35px;
  border-bottom-right-radius: 35px;
- 
+
 }
 
 .todo-button{
  font-weight: bolder;
  color: rgb(221, 164, 48);
-
+ 
  background: rgba(255, 255, 255, 0.849);
  cursor: pointer;
  transition: all 0.3s ease;
