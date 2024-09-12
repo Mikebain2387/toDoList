@@ -34,116 +34,9 @@ header, form{
  align-items: center;
 }
 
-@media (min-width: 769px) and (max-width:1024px) {
- /* STYLES HERE */
- .addStuff{
-  margin-top: -100px;
-  
-  width: 550px;
-  height: 75px;
-  font-size: 30px;
- }
- form button{
-  margin-top: -100px;
-  height: 75px;
-  
-  
- }
- 
- .btn-text{
-  font-size: 30px;
- }
-  .theList{
-   margin-top: -90px;
-  }
-  div.todo{
-   
-  width: 550px;
-  
-   }
- }
-
-@media (min-width: 481px) and (max-width: 768px) { 
- /* STYLES HERE */
- header h1{
-  font-size: 100px;
- }
- .addStuff{
-  margin-top: -100px;
-  
-  width: 550px;
-  height: 65px;
-  font-size: 30px;
- }
- form button{
-  margin-top: -100px;
-  height: 65px;
-  
- }
- 
- .btn-text{
-  font-size: 30px;
- }
-  .theList{
-   margin-top: -90px;
-  }
-  div.todo{
-   
-  width: 500px;
-  
-   }
- }
 
 
-@media (max-width: 480px) {
- /* STYLES HERE */
-header h1{
- font-size: 55px;
-}
 
-.addStuff{
- margin-top: -100px;
- 
- width: 270px;
- height: 45px;
- font-size: 20px;
-}
-form button{
- 
- margin-top: -100px;
- height: 45px;
- 
-}
-
-
-.btn-text{
- position: relative;
- top:-24px;
- 
- font-size: 20px;
- 
-}
- .theList{
-  margin-top: -90px;
-  
- }
- div.todo{
-  
- width: 300px;
- 
- 
-  }
-  .todo, .trash-btn, .complete-btn{
-   height: 45px;
-   
-  }
-  .trash-btn, .complete-btn{
-   font-size: 12px !important;
-  }
-  
-}
-
-/*end media query*/
 
 form input, form button{
  padding: 0.5rem;
@@ -151,7 +44,7 @@ form input, form button{
  border: none;
  background: rgba(251, 251, 251, 0.678);
  font-weight: bold;
- color: rgb(36, 37, 37);
+ color: rgb(41, 52, 52);
   font-family: 'caveat';
   text-align: center;
 }
@@ -159,7 +52,7 @@ form input, form button{
 form input{
  border-top-left-radius: 35px;
  border-bottom-left-radius: 35px;
- 
+
 }
 
 form button{
@@ -171,7 +64,7 @@ form button{
 .todo-button{
  font-weight: bolder;
  color: rgb(221, 164, 48);
- 
+
  background: rgba(255, 255, 255, 0.849);
  cursor: pointer;
  transition: all 0.3s ease;
@@ -230,18 +123,153 @@ border-radius: 25px;
 }
 
 .complete-btn{
- background: rgba(53, 158, 149, 0.662);
+ background: rgba(98, 127, 125, 0.662);
 }
 
-.completed{
+.completed .todo-item{
  text-decoration: line-through;
  opacity: 0.6;
+
 }
+
+.complete-btn:hover{
+ 
+  color: rgb(255, 170, 0);
+  background: rgb(255, 255, 255);
+}
+.trash-btn:hover{
+  color: rgb(214, 40, 40);
+  background: whitesmoke;
+}
+
 
 .btn-text{
   padding-right: 15px;
+  
  }
 
  .addStuff{
   width: 600px;
  }
+
+ 
+
+/*media querys*/
+
+ 
+@media (min-width: 769px) and (max-width:1026px) {
+  /* STYLES HERE */
+  .addStuff{
+   margin-top: -100px;
+   
+   width: 550px;
+   height: 75px;
+   font-size: 50px;
+  }
+  form button{
+   margin-top: -100px;
+   height: 75px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+  }
+ .btn-text{
+ margin-top: -10px;
+  }
+  
+  .todo-button{
+   
+   font-size: 70px;
+  }
+   .theList{
+    margin-top: -90px;
+   }
+   div.todo{
+    
+   width: 550px;
+   
+    }
+  }
+ 
+ @media (min-width: 481px) and (max-width: 768px) { 
+  /* STYLES HERE */
+  header h1{
+   font-size: 100px;
+  }
+  .addStuff{
+   margin-top: -100px;
+   
+   width: 550px;
+   height: 65px;
+   font-size: 30px;
+  }
+  form button{
+   margin-top: -100px;
+   height: 65px;
+   
+  }
+  
+  .btn-text{
+   font-size: 30px;
+  }
+   .theList{
+    margin-top: -90px;
+   }
+   div.todo{
+    
+   width: 500px;
+   
+    }
+  }
+ 
+ 
+ @media (max-width: 480px) {
+  /* STYLES HERE */
+ header h1{
+  font-size: 55px;
+ }
+ 
+ .addStuff{
+  margin-top: -100px;
+  
+  width: 270px;
+  height: 45px;
+  font-size: 20px;
+ }
+ form button{
+  
+  margin-top: -100px;
+  height: 45px;
+  
+ }
+ 
+ 
+ .btn-text{
+  position: relative;
+  top:-22px;
+  left: 3px;
+  font-size: 40px;
+  
+ }
+  .theList{
+   margin-top: -90px;
+   
+  }
+  div.todo{
+   font-size: 15px;
+  width: 300px;
+  
+  
+   }
+   .todo, .trash-btn, .complete-btn{
+    height: 45px;
+    
+   }
+   .trash-btn, .complete-btn{
+    font-size: 12px !important;
+   }
+   
+ }
+ 
+ /*end media query*/
