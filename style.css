@@ -22,7 +22,8 @@ header h1{
  font-family: 'caveat';
  text-decoration: underline;
  text-underline-offset: 10px;
- color: rgba(178, 130, 25, 0.758);
+ color: rgb(255, 170, 0);
+ 
  text-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
 
@@ -169,14 +170,15 @@ form button{
 
 .todo-button{
  font-weight: bolder;
- color: rgb(84, 87, 86);
+ color: rgb(221, 164, 48);
+ 
  background: rgba(255, 255, 255, 0.849);
  cursor: pointer;
  transition: all 0.3s ease;
 }
 
 .todo-button:hover{
-background: rgba(178, 130, 25, 0.758);
+background: rgba(235, 174, 42, 0.758);
 color: whitesmoke;
 
 }
@@ -237,7 +239,7 @@ border-radius: 25px;
 }
 
 .btn-text{
-  padding-right: 10px;
+  padding-right: 15px;
  }
 
  .addStuff{
