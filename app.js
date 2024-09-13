@@ -16,7 +16,7 @@ function addTodo(event){
   
   if(todoInput.value !== ""){ 
   
-  
+ 
   // add new element to hold list items and classes for them
   const todoDiv = document.createElement("div");
   todoDiv.classList.add("todo");
